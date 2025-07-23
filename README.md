@@ -110,7 +110,6 @@ docker-compose up
 
 ### Transcripts
 - Full transcript viewer
-- Search functionality
 - Word count statistics
 - Quarter selection dropdown
 
@@ -129,8 +128,6 @@ docker-compose up
 ### Tone Trends
 - Management tone scoring (0-100 scale)
 - Quarterly tone type classification
-- Confidence level tracking
-- Historical trend visualization
 
 ## Troubleshooting
 
