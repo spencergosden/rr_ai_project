@@ -45,8 +45,8 @@ check_data_directory() {
     fi
     
     if [ ! "$(ls -A data/transcripts 2>/dev/null)" ]; then
-        echo "📁 No transcript files found in data/transcripts/"
-        echo "   Run 'collect' mode first to gather transcript data"
+        echo "No transcript files found in data/transcripts/"
+        echo "Run 'collect' mode first to gather transcript data"
     fi
 }
 
@@ -59,7 +59,7 @@ main() {
     
     case "$command" in
         "dashboard"|"")
-            echo "🌐 Starting Streamlit dashboard on port $STREAMLIT_PORT..."
+            echo "Starting Streamlit dashboard on port $STREAMLIT_PORT..."
             check_data_directory
             exec streamlit run Frontend.py \
                 --server.port=$STREAMLIT_PORT \
