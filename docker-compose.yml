@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  nvidia-analysis:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nvidia-analysis:latest
+    container_name: nvidia-earnings-dashboard
+    ports:
+      - "${STREAMLIT_PORT:-8501}:8501"
+    environment:
+      - ANTHROPIC_KEY=${ANTHROPIC_KEY}
+      - STREAMLIT_PORT=8501
+      - MODE=dashboard
+    volumes:
+      # Optional: Mount data directory for persistence
+      - ./data:/app/data
+      # Optional: Mount for development (comment out for production)
+      # - ./Frontend.py:/app/Frontend.py
+      # - ./Transcript_Collection.py:/app/Transcript_Collection.py
+      # - ./Transcript_Processing.py:/app/Transcript_Processing.py
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+    # Additional services for different modes
+  
+  transcript-collector:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nvidia-analysis:latest
+    container_name: nvidia-transcript-collector
+    command: ["collect"]
+    volumes:
+      - ./data:/app/data
+    environment:
+      - MODE=collect
+    profiles:
+      - collect
+    
+  transcript-processor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nvidia-analysis:latest
+    container_name: nvidia-transcript-processor
+    command: ["process"]
+    volumes:
+      - ./data:/app/data
+    environment:
+      - ANTHROPIC_KEY=${ANTHROPIC_KEY}
+      - MODE=process
+    profiles:
+      - process
+
+# Optional: Networks for advanced setups
+networks:
+  default:
+    name: nvidia-analysis-network
+
+# Optional: Volumes for data persistence
+volumes:
+  nvidia-data:
+    driver: local
