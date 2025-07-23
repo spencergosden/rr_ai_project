@@ -6,7 +6,7 @@ A comprehensive Docker-containerized application for analyzing NVIDIA's earnings
 
 - Interactive Streamlit dashboard for exploring quarterly earnings data
 - Automated web scraping of earnings call transcripts
-- AI-powered NLP analysis using Anthropic's Claude API
+- AI-powered NLP analysis using Anthropic's Claude API - Model is Claude 4 Sonnet
 - Fully containerized with Docker for easy deployment
 - Sentiment scoring for management and Q&A sections
 - Strategic focus and theme extraction
