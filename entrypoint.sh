@@ -31,7 +31,7 @@ show_help() {
 # Function to validate environment for processing
 validate_processing_env() {
     if [ -z "$ANTHROPIC_KEY" ]; then
-        echo "❌ Error: ANTHROPIC_KEY environment variable is required for processing mode"
+        echo "Error: ANTHROPIC_KEY environment variable is required for processing mode"
         echo "   Set it with: docker run -e ANTHROPIC_KEY=your_key_here nvidia-analysis process"
         exit 1
     fi
@@ -40,7 +40,7 @@ validate_processing_env() {
 # Function to check if data directory exists and has content
 check_data_directory() {
     if [ ! -d "data" ]; then
-        echo "⚠️  Warning: data directory not found. Creating..."
+        echo "Warning: data directory not found. Creating..."
         mkdir -p data/transcripts data/NLP
     fi
     
@@ -54,8 +54,8 @@ check_data_directory() {
 main() {
     local command=${1:-dashboard}
     
-    echo "🚀 Starting NVIDIA Earnings Analysis Container..."
-    echo "📊 Mode: $command"
+    echo "Starting NVIDIA Earnings Analysis Container..."
+    echo "Mode: $command"
     
     case "$command" in
         "dashboard"|"")
@@ -71,20 +71,20 @@ main() {
             ;;
         
         "collect")
-            echo "📥 Starting transcript collection..."
+            echo "Starting transcript collection..."
             check_data_directory
             exec python Transcript_Collection.py
             ;;
         
         "process")
-            echo "🤖 Starting transcript processing with AI..."
+            echo "Starting transcript processing with AI..."
             validate_processing_env
             check_data_directory
             exec python Transcript_Processing.py
             ;;
         
         "bash")
-            echo "🐚 Starting bash shell..."
+            echo "Starting bash shell..."
             exec bash
             ;;
         
@@ -94,7 +94,7 @@ main() {
             ;;
         
         *)
-            echo "❌ Unknown command: $command"
+            echo "Unknown command: $command"
             echo ""
             show_help
             exit 1
@@ -103,7 +103,7 @@ main() {
 }
 
 # Handle signals gracefully
-trap 'echo "🛑 Shutting down gracefully..."; exit 0' SIGTERM SIGINT
+trap 'echo "Shutting down gracefully..."; exit 0' SIGTERM SIGINT
 
 # Run main function with all arguments
 main "$@"
