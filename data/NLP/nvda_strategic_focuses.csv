@@ -1,0 +1,21 @@
+quarter,year,theme,description,mentions,priority
+Q1,2025,AI Factory Infrastructure,Building next-generation data centers that produce artificial intelligence as a commodity,8,highest
+Q1,2025,Blackwell Platform Ramp,Full production of next-gen platform with 4x training and 30x inference performance improvements,12,highest
+Q1,2025,Sovereign AI Expansion,"Countries building domestic AI infrastructure, approaching high single-digit billions in revenue",6,high
+Q1,2025,Enterprise AI Adoption,"Strong growth in enterprise customers, automotive expected to be largest vertical",5,high
+Q1,2025,Software Platform Expansion,NVIDIA NIMs and comprehensive software stack monetization,4,medium
+Q2,2025,Blackwell Platform Transition,"Next-generation AI infrastructure platform with 3-5x performance improvement, starting Q4 production ramp",15,high
+Q2,2025,Data Center Modernization,Transition from $1T general-purpose computing infrastructure to accelerated computing,12,high
+Q2,2025,Enterprise AI Adoption,"NVIDIA AI Enterprise platform, NIMs, and AI foundry services targeting Fortune 100 companies",8,high
+Q2,2025,Sovereign AI Expansion,"Countries building national AI infrastructure, expected to reach low double-digit billions",6,medium
+Q2,2025,Networking Portfolio Growth,Spectrum-X Ethernet platform on track for multibillion-dollar product line within a year,5,medium
+Q3,2025,Blackwell Production Ramp,Full production of next-gen Blackwell architecture with demand exceeding supply,15,high
+Q3,2025,AI Scaling Evolution,"Three scaling methods: pretraining, post-training, and inference-time scaling",8,high
+Q3,2025,Data Center Modernization,Transforming $1T traditional data centers from CPU-based to GPU-based AI infrastructure,6,high
+Q3,2025,Enterprise AI Adoption,NVIDIA AI Enterprise platform for agentic AI and industrial applications,7,medium
+Q3,2025,Physical AI and Robotics,Omniverse platform enabling industrial AI and robotics through physical world understanding,5,medium
+Q4,2025,Blackwell Architecture Dominance,Positioning Blackwell as revolutionary for reasoning AI with 25x higher token throughput and 20x lower cost vs Hopper,15,highest
+Q4,2025,Three Scaling Laws,"Pre-training, post-training, and inference time scaling driving exponential compute demand",8,high
+Q4,2025,AI Factory Transformation,Data centers becoming AI factories with direct revenue monetization through token generation,6,high
+Q4,2025,Enterprise and Physical AI Expansion,Moving beyond consumer AI into agentic AI for enterprise and physical AI for robotics,7,high
+Q4,2025,Annual Product Cadence,Maintaining innovation leadership with Blackwell Ultra in H2 2025 and Rubin roadmap,4,medium

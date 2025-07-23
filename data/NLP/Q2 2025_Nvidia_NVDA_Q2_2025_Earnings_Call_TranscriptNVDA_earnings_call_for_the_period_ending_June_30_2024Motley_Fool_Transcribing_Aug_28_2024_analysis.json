@@ -1,0 +1,126 @@
+{
+  "management_sentiment": {
+    "score": "very positive",
+    "confidence": 0.92,
+    "reasoning": "Record Q2 revenue of $30B (up 122% YoY), strong Data Center growth of 154% YoY to $26.3B, confident guidance for Q3 at $32.5B, and enthusiastic language about Blackwell demand being 'incredible'",
+    "tone": "triumphant",
+    "tone_score": 92
+  },
+  "qa_sentiment": {
+    "score": "positive",
+    "confidence": 0.88,
+    "reasoning": "Management confidently addressed concerns about Blackwell mask changes, ROI questions, and transition dynamics. Jensen provided detailed explanations about platform transitions and market opportunities, showing strong conviction in long-term strategy"
+  },
+  "strategic_focuses": [
+    {
+      "theme": "Blackwell Platform Transition",
+      "description": "Next-generation AI infrastructure platform with 3-5x performance improvement, starting Q4 production ramp",
+      "mentions": 15,
+      "priority": "high"
+    },
+    {
+      "theme": "Data Center Modernization",
+      "description": "Transition from $1T general-purpose computing infrastructure to accelerated computing",
+      "mentions": 12,
+      "priority": "high"
+    },
+    {
+      "theme": "Enterprise AI Adoption",
+      "description": "NVIDIA AI Enterprise platform, NIMs, and AI foundry services targeting Fortune 100 companies",
+      "mentions": 8,
+      "priority": "high"
+    },
+    {
+      "theme": "Sovereign AI Expansion",
+      "description": "Countries building national AI infrastructure, expected to reach low double-digit billions",
+      "mentions": 6,
+      "priority": "medium"
+    },
+    {
+      "theme": "Networking Portfolio Growth",
+      "description": "Spectrum-X Ethernet platform on track for multibillion-dollar product line within a year",
+      "mentions": 5,
+      "priority": "medium"
+    }
+  ],
+  "tone_indicators": {
+    "confidence": "high",
+    "defensive_topics": [
+      "Blackwell mask change",
+      "ROI concerns",
+      "China revenue"
+    ],
+    "outlook": "optimistic"
+  },
+  "key_metrics": [
+    {
+      "metric": "Q2 Revenue",
+      "value": "$30B",
+      "change": "+122% YoY, +15% QoQ"
+    },
+    {
+      "metric": "Data Center Revenue",
+      "value": "$26.3B",
+      "change": "+154% YoY, +16% QoQ"
+    },
+    {
+      "metric": "Q3 Revenue Guidance",
+      "value": "$32.5B",
+      "change": "+8.3% QoQ implied"
+    },
+    {
+      "metric": "Gross Margin",
+      "value": "75.7% non-GAAP",
+      "change": "Down sequentially"
+    },
+    {
+      "metric": "Gaming Revenue",
+      "value": "$2.88B",
+      "change": "+16% YoY, +9% QoQ"
+    },
+    {
+      "metric": "Blackwell Q4 Revenue",
+      "value": "Several billion dollars",
+      "change": "New product"
+    },
+    {
+      "metric": "Software Run Rate",
+      "value": "$2B annually",
+      "change": "Approaching by year-end"
+    },
+    {
+      "metric": "Share Repurchase Authorization",
+      "value": "$50B",
+      "change": "New authorization"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Blackwell Production Ramp",
+      "severity": "medium",
+      "description": "Mask change executed but production complexity remains"
+    },
+    {
+      "risk": "China Market Competition",
+      "severity": "medium",
+      "description": "Remains very competitive with export control constraints"
+    },
+    {
+      "risk": "Gross Margin Pressure",
+      "severity": "low",
+      "description": "New product mix and inventory provisions impacting margins"
+    },
+    {
+      "risk": "Supply-Demand Imbalance",
+      "severity": "low",
+      "description": "Blackwell demand well above supply, continuing into next year"
+    },
+    {
+      "risk": "Liquid Cooling Adoption",
+      "severity": "low",
+      "description": "Customer readiness for liquid cooling infrastructure"
+    }
+  ],
+  "quarter": "Q2",
+  "year": "2025"
+}

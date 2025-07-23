@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:investor.nvidia.com)",
+      "Bash(pip install:*)",
+      "Bash(ls:*)",
+      "Bash(source:*)",
+      "Bash(python:*)",
+      "Bash(grep:*)",
+      "Bash(timeout 120 python:*)",
+      "WebFetch(domain:finance.yahoo.com)"
+    ],
+    "deny": []
+  }
+}

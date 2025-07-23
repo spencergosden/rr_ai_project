@@ -1,0 +1,110 @@
+{
+  "management_sentiment": {
+    "score": "very positive",
+    "confidence": 0.95,
+    "reasoning": "Record Q1 revenue of $26B (up 262% YoY), strong guidance of $28B for Q2, confident language about 'next industrial revolution' and AI transformation",
+    "tone": "triumphant",
+    "tone_score": 95
+  },
+  "qa_sentiment": {
+    "score": "very positive",
+    "confidence": 0.9,
+    "reasoning": "Jensen confidently addressed all competitive and technical concerns, emphasized strong demand exceeding supply, and provided detailed roadmap visibility"
+  },
+  "strategic_focuses": [
+    {
+      "theme": "AI Factory Infrastructure",
+      "description": "Building next-generation data centers that produce artificial intelligence as a commodity",
+      "mentions": 8,
+      "priority": "highest"
+    },
+    {
+      "theme": "Blackwell Platform Ramp",
+      "description": "Full production of next-gen platform with 4x training and 30x inference performance improvements",
+      "mentions": 12,
+      "priority": "highest"
+    },
+    {
+      "theme": "Sovereign AI Expansion",
+      "description": "Countries building domestic AI infrastructure, approaching high single-digit billions in revenue",
+      "mentions": 6,
+      "priority": "high"
+    },
+    {
+      "theme": "Enterprise AI Adoption",
+      "description": "Strong growth in enterprise customers, automotive expected to be largest vertical",
+      "mentions": 5,
+      "priority": "high"
+    },
+    {
+      "theme": "Software Platform Expansion",
+      "description": "NVIDIA NIMs and comprehensive software stack monetization",
+      "mentions": 4,
+      "priority": "medium"
+    }
+  ],
+  "tone_indicators": {
+    "confidence": "high",
+    "defensive_topics": [
+      "China market challenges",
+      "Supply constraints"
+    ],
+    "outlook": "optimistic"
+  },
+  "key_metrics": [
+    {
+      "metric": "Q1 Revenue",
+      "value": "$26B",
+      "change": "+262% YoY, +18% QoQ"
+    },
+    {
+      "metric": "Data Center Revenue",
+      "value": "$22.6B",
+      "change": "+427% YoY, +23% QoQ"
+    },
+    {
+      "metric": "Q2 Guidance",
+      "value": "$28B",
+      "change": "+12% sequential growth expected"
+    },
+    {
+      "metric": "Gross Margin",
+      "value": "78.9% non-GAAP",
+      "change": "Sequential expansion"
+    },
+    {
+      "metric": "Inference Revenue Mix",
+      "value": "~40%",
+      "change": "Of trailing four quarters Data Center revenue"
+    },
+    {
+      "metric": "Cloud Provider ROI",
+      "value": "$5 return",
+      "change": "For every $1 spent on NVIDIA infrastructure over 4 years"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Supply Constraints",
+      "severity": "medium",
+      "description": "Demand exceeding supply for H200 and Blackwell well into next year"
+    },
+    {
+      "risk": "China Market Decline",
+      "severity": "medium",
+      "description": "Significantly lower revenue due to export controls, increased competition"
+    },
+    {
+      "risk": "Competitive Pressure",
+      "severity": "low",
+      "description": "Cloud customers developing internal chips, though Jensen expressed confidence in NVIDIA's advantages"
+    },
+    {
+      "risk": "Rapid Product Transitions",
+      "severity": "low",
+      "description": "One-year product cycles creating potential customer timing decisions"
+    }
+  ],
+  "quarter": "Q1",
+  "year": "2025"
+}
